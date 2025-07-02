@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pendaftaran - Cipta Hospital Indonesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00796b;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    .input-group i {
+      margin-right: 10px;
+      color: #00796b;
+    }
+
+    .input-group input,
+    .input-group select {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+      background: transparent;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00695c;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #004d40;
+      color: white;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulir Pendaftaran Berobat</h2>
+    <form>
+      <div class="input-group">
+        <i data-feather="user"></i>
+        <input type="text" placeholder="Nama Lengkap Pasien" required />
+      </div>
+      <div class="input-group">
+        <i data-feather="calendar"></i>
+        <input type="date" required />
+      </div>
+      <div class="input-group">
+        <i data-feather="user-plus"></i>
+        <select required>
+          <option value="">Pilih Dokter</option>
+          <option>Dr. Jenkins</option>
+          <option>Dr. Ratna</option>
+          <option>Dr. Andi</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <i data-feather="phone"></i>
+        <input type="tel" placeholder="Nomor Handphone" required />
+      </div>
+      <button type="submit" class="btn">Daftar Sekarang</button>
+    </form>
+  </div>
+
+  <footer>
+    Created by Fahri Fadhlurrahman Rendy Dhaif Muharram. &copy; 2025
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+
+</body>
+</html>
